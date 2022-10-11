@@ -1,0 +1,117 @@
+.color-body {
+    background-color: #f8f8f8;
+    height: 100vh;
+}
+
+.font {
+    font-family: "Almarai", sans-serif;
+}
+
+.title {
+    color: #224f61;
+    font-family: Almarai;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 64px;
+}
+
+.underline {
+    height: 1px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #b45b35;
+    background-color: #e4865d;
+}
+
+.btn {
+    color: black !important;
+    font-family: Almarai !important;
+    font-size: 18px !important;
+    letter-spacing: 0 !important;
+    line-height: 24px !important;
+    border: 2px solid #b45b35 !important;
+}
+
+.btn:hover {
+    color: #fff !important;
+    font-family: Almarai !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    letter-spacing: 0 !important;
+    line-height: 24px !important;
+    border-radius: 11px !important;
+    border: none !important;
+    background: #e4865d !important;
+    -webkit-border-radius: 11px !important;
+    -moz-border-radius: 11px !important;
+    -ms-border-radius: 11px !important;
+    -o-border-radius: 11px !important;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.img-item {
+    height: 180px;
+    width: 252px;
+    border-radius: 5px;
+}
+
+.item-description {
+    color: #8c8c8c;
+    font-family: Almarai;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.item-title {
+    color: #555555;
+    font-family: Almarai;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.card-color {
+    background-color: #f8f8f8;
+}
+
+.item-price {
+    color: #e4865d;
+    font-family: Almarai;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.btn-search {
+    color: #e4865d;
+    border-radius: 3px solid #e4865d;
+    border-radius: 8px;
+    background-color: white;
+    -webkit-border-radius: 3px solid #e4865d;
+    -moz-border-radius: 3px solid #e4865d;
+    -ms-border-radius: 3px solid #e4865d;
+    -o-border-radius: 3px solid #e4865d;
+}
+
+.btn-search:hover {
+    color: white;
+    border-radius: 3px solid white;
+    background-color: #e4865d;
+    border-radius: 8px;
+    -webkit-border-radius: 3px solid white;
+    -moz-border-radius: 3px solid white;
+    -ms-border-radius: 3px solid white;
+    -o-border-radius: 3px solid white;
+}
+
+.brand-color {
+    color: #e4865d;
+}
