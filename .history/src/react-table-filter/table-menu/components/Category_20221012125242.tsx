@@ -1,5 +1,5 @@
 import { Row, Col } from "react-bootstrap";
-import { Roll } from "react-awesome-reveal";
+import Roll from "react-reveal/Roll";
 
 const Category = ({ filterbyCategory, ListCat }: any) => {
   //Filter by category
