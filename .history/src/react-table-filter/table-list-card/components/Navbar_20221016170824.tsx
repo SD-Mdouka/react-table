@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { IconSearch } from "./Icon-Search";
 
 const NavBar = ({ searchMovies }: any) => {
   const onSearch = (serachValue: string) => {
@@ -22,16 +21,6 @@ const NavBar = ({ searchMovies }: any) => {
                 onChange={(e) => onSearch(e.target.value)}
               />
             </div>
-            <span
-              className="serach"
-              style={{
-                backgroundColor: "#fff",
-                padding: "5px",
-                borderRadius: "50%",
-              }}
-            >
-              <IconSearch className="serach" size="24" color={"#333"} />
-            </span>
           </Col>
         </Row>
       </Container>

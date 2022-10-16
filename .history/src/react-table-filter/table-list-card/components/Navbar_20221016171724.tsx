@@ -27,7 +27,7 @@ const NavBar = ({ searchMovies }: any) => {
               style={{
                 backgroundColor: "#fff",
                 padding: "5px",
-                borderRadius: "50%",
+                borderRadius: "12px",
               }}
             >
               <IconSearch className="serach" size="24" color={"#333"} />

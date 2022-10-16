@@ -24,11 +24,7 @@ const NavBar = ({ searchMovies }: any) => {
             </div>
             <span
               className="serach"
-              style={{
-                backgroundColor: "#fff",
-                padding: "5px",
-                borderRadius: "50%",
-              }}
+              style={{ backgroundColor: "#fff", padding: "5px" }}
             >
               <IconSearch className="serach" size="24" color={"#333"} />
             </span>

@@ -22,14 +22,7 @@ const NavBar = ({ searchMovies }: any) => {
                 onChange={(e) => onSearch(e.target.value)}
               />
             </div>
-            <span
-              className="serach"
-              style={{
-                backgroundColor: "#fff",
-                padding: "5px",
-                borderRadius: "50%",
-              }}
-            >
+            <span className="serach">
               <IconSearch className="serach" size="24" color={"#333"} />
             </span>
           </Col>

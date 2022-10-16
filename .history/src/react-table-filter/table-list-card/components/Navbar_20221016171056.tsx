@@ -15,6 +15,7 @@ const NavBar = ({ searchMovies }: any) => {
           </Col>
           <Col xs="10" lg="11" className="d-flex align-items-center">
             <div className="serach w-100">
+              <IconSearch className="fa fa-serach" size="24" color={"#333"} />
               <input
                 type="text"
                 placeholder="Search ..."
@@ -22,16 +23,6 @@ const NavBar = ({ searchMovies }: any) => {
                 onChange={(e) => onSearch(e.target.value)}
               />
             </div>
-            <span
-              className="serach"
-              style={{
-                backgroundColor: "#fff",
-                padding: "5px",
-                borderRadius: "50%",
-              }}
-            >
-              <IconSearch className="serach" size="24" color={"#333"} />
-            </span>
           </Col>
         </Row>
       </Container>

@@ -21,17 +21,8 @@ const NavBar = ({ searchMovies }: any) => {
                 className="form-control"
                 onChange={(e) => onSearch(e.target.value)}
               />
+              <IconSearch className="fa fa-serach" size="24" color={"#333"} />
             </div>
-            <span
-              className="serach"
-              style={{
-                backgroundColor: "#fff",
-                padding: "5px",
-                borderRadius: "50%",
-              }}
-            >
-              <IconSearch className="serach" size="24" color={"#333"} />
-            </span>
           </Col>
         </Row>
       </Container>
