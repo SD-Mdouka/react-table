@@ -7,16 +7,10 @@ import Pageination from "./Pageination";
 const CardMoviesList = ({ movies, getPage, countPages }: any) => {
   return (
     <Row className="mt-3">
-      {movies.length >= 1 ? (
-        movies.map((mov: any) => {
-          return <CardMovies key={mov.id} mov={mov} />;
-        })
-      ) : (
-        <h2>Aucuin Filme ...</h2>
-      )}
-      {movies.length >= 1 ? (
-        <Pageination getPage={getPage} countPages={countPages} />
-      ) : null}
+      {movies.map((mov: any) => {
+        return <CardMovies key={mov.id} mov={mov} />;
+      })}
+      <Pageination getPage={getPage} countPages={countPages} />
     </Row>
   );
 };

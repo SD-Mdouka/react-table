@@ -1,11 +1,11 @@
 import React from "react";
 import { Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const CardMovies = ({ mov }: any) => {
   return (
     <Col xs="6" sm="6" lg="3" className="my-1">
-      <Link to={`/movie/${mov.id}`}>
+      <Link to={`/movie/:${mov.id}`}>
         <div className="card">
           <img
             src={`https://image.tmdb.org/t/p/w500` + mov.poster_path}

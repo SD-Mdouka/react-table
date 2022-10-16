@@ -16,7 +16,9 @@ const CardMoviesList = ({ movies, getPage, countPages }: any) => {
       )}
       {movies.length >= 1 ? (
         <Pageination getPage={getPage} countPages={countPages} />
-      ) : null}
+      ) : (
+        ""
+      )}
     </Row>
   );
 };

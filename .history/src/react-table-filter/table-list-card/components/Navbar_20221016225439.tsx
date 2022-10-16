@@ -12,7 +12,8 @@ const NavBar = ({ searchMovies }: any) => {
       <Container>
         <Row className="pt-2">
           <Col xs="2" lg="1">
-            <a href="/">Logo</a>
+            <Link></Link>
+            Logo
           </Col>
           <Col xs="10" lg="11" className="d-flex align-items-center">
             <div className="serach w-100">
