@@ -14,7 +14,7 @@ const Category = ({ filterbyCategory, ListCat }: any) => {
             ListCat.map((cat: string) => {
               return (
                 <div key={cat}>
-                  <button onClick={() => onFilter(cat)} className="btn">
+                  <button onClick={() => onFilter(cat)} className="btn mx-2">
                     {cat}
                   </button>
                 </div>

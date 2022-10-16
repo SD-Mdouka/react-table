@@ -5,6 +5,7 @@ import TableMenu from "./react-table-filter/table-menu";
 export const App = () => {
   return (
     <>
+      <TableMenu />
       <TableCard />
     </>
   );
