@@ -1,36 +1,22 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import { getDetaileMovies } from "../redux/actions/moviesAction";
 
 const MoviesDeatiles = () => {
   const [movDetaile, setMoviesDetaile] = useState([]);
   const ID_MOVIS = useParams();
   //get movies filme detaile
-  // const getDetaileMovies = async () => {
-  //   const res = await axios.get(
-  //     `https://api.themoviedb.org/3/movie/${ID_MOVIS.id}?api_key=497503c38549d10e74795b4ebe84b909&language=en-US`
-  //   );
-  //   setMoviesDetaile(res.data);
-  // };
+  const getDetaileMovies = async () => {
+    const res = await axios.get(
+      `https://api.themoviedb.org/3/movie/${ID_MOVIS.id}?api_key=497503c38549d10e74795b4ebe84b909&language=en-US`
+    );
+    setMoviesDetaile(res.data);
+  };
   //in with load your page
-  /*-------------------- */
-  //import store
-  const dispatch = useDispatch();
-  //In hooks is start all function
   useEffect(() => {
-    //execute effect
-    //dispatch
-    dispatch(getDetaileMovies(ID_MOVIS.id));
+    getDetaileMovies();
   }, []);
-  //store data
-  const dataDetailMovies = useSelector((state: any) => state.ListMovies);
-  //fetch your data
-  useEffect(() => {
-    setMoviesDetaile(dataDetailMovies);
-  }, [dataDetailMovies]);
   const {
     poster_path,
     overview,

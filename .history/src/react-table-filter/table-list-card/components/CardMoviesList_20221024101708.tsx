@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { getListAllMovies } from "../redux/actions/moviesAction";

@@ -47,7 +47,7 @@ export const getPage: any = (numberPage: number) => {
     });
   };
 };
-export const getDetaileMovies: any = (numberFilme: number) => {
+export const getDetaileMovies = (numberFilme: number) => {
   // heiorder function
   return async (dispatch: any) => {
     const res = await axios.get(DetaileMoviesApi(numberFilme));

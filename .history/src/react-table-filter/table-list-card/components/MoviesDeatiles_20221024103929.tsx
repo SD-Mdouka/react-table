@@ -9,6 +9,9 @@ const MoviesDeatiles = () => {
   const [movDetaile, setMoviesDetaile] = useState([]);
   const ID_MOVIS = useParams();
   //get movies filme detaile
+  const dispatch = useDispatch();
+  //In hooks is start all function
+
   // const getDetaileMovies = async () => {
   //   const res = await axios.get(
   //     `https://api.themoviedb.org/3/movie/${ID_MOVIS.id}?api_key=497503c38549d10e74795b4ebe84b909&language=en-US`
@@ -16,21 +19,11 @@ const MoviesDeatiles = () => {
   //   setMoviesDetaile(res.data);
   // };
   //in with load your page
-  /*-------------------- */
-  //import store
-  const dispatch = useDispatch();
-  //In hooks is start all function
   useEffect(() => {
-    //execute effect
-    //dispatch
     dispatch(getDetaileMovies(ID_MOVIS.id));
   }, []);
   //store data
   const dataDetailMovies = useSelector((state: any) => state.ListMovies);
-  //fetch your data
-  useEffect(() => {
-    setMoviesDetaile(dataDetailMovies);
-  }, [dataDetailMovies]);
   const {
     poster_path,
     overview,
